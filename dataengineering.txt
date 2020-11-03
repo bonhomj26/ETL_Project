@@ -1,0 +1,24 @@
+-- load the 2016 median Income data
+CREATE TABLE Median_Income (
+State VARCHAR,
+Median income DEC
+);
+
+
+-- Create tables for raw data to be loaded into
+CREATE TABLE median_index (
+State VARCHAR,
+IncRate DEC,
+DivIndex DEC,
+Black DEC, 
+Indians DEC,
+Asian DEC,
+Hawaiian DEC,
+Races DEC,
+Latino DEC,
+White  DEC
+);
+
+INSERT INTO median_index ("State", "IncRate", "DivIndex", "Black", "Indians", "Asian", "Hawaiian", "Races", "Latino", "White") 
+VALUES ((State), (IncRate), (DivIndex), (Black), (Indians), (Asian), (Hawaiian), (Races), (Latino), (White))
+PARAMETER ({'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.738867, 'Black': 7.7, 'Indians': 21.8, 'Asian': 41.4, 'Hawaiian': 0.7, 'Races': 3.7, 'Latino': 13.5, 'White': 12.9}, {'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.769346, 'Black': 7.4, 'Indians': 13.8, 'Asian': 31.1, 'Hawaiian': 2.3, 'Races': 4.8, 'Latino': 14.6, 'White': 29.2}, {'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.6015149999999999, 'Black': 6.3, 'Indians': 8.1, 'Asian': 8.9, 'Hawaiian': 2.3, 'Races': 7.8, 'Latino': 8.6, 'White': 60.5}, {'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.315556, 'Black': 0.7, 'Indians': 81.8, 'Asian': 1.0, 'Hawaiian': 0.3, 'Races': 4.1, 'Latino': 1.6, 'White': 11.5}, {'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.648271, 'Black': 0.0, 'Indians': 33.8, 'Asian': 1.1, 'Hawaiian': 0.3, 'Races': 17.5, 'Latino': 3.9, 'White': 45.3}, {'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.25037800000000004, 'Black': 1.3, 'Indians': 3.7, 'Asian': 1.2, 'Hawaiian': 0.1, 'Races': 4.7, 'Latino': 3.1, 'White': 86.3}, {'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.45543, 'Black': 0.4, 'Indians': 71.0, 'Asian': 0.9, 'Hawaiian': 0.2, 'Races': 9.2, 'Latino': 2.4, 'White': 17.7}, {'State': 'AK', 'IncRate': 75723, 'DivIndex': 0.46852299999999997, 'Black': 5.5, 'Indians': 7.1, 'Asian': 2.9, 'Hawaiian': 0.4, 'Races': 6.3, 'Latino': 7.7, 'White': 71.6}  ... displaying 10 of 3142 total bound parameter sets ...  {'State': 'WY', 'IncRate': 57829, 'DivIndex': 0.29686799999999997, 'Black': 0.8, 'Indians': 1.7, 'Asian': 0.7, 'Hawaiian': 0.1, 'Races': 1.7, 'Latino': 14.2, 'White': 82.6}, {'State': 'WY', 'IncRate': 57829, 'DivIndex': 0.147697, 'Black': 0.6, 'Indians': 1.7, 'Asian': 0.3, 'Hawaiian': 0.0, 'Races': 2.1, 'Latino': 3.8, 'White': 92.2})
